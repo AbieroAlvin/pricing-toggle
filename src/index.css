@@ -1,0 +1,26 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;700&display=swap");
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  /* - Linear Gradient:  */
+  --L-purple: hsl(236, 72%, 79%);
+  --D-purple: hsl(237, 63%, 64%);
+
+  --V-L-Grayish-Blue: hsl(240, 78%, 98%);
+  --L-Grayish-Blue: hsl(234, 14%, 74%);
+  --Grayish-Blue: hsl(233, 13%, 49%);
+  --D-Grayish-Blue: hsl(232, 13%, 33%);
+
+  --Text: 15px;
+}
+
+.gradient {
+  @apply bg-gradient-to-b from-[var(--L-purple)] to-[--D-purple];
+}
+
+.toggle {
+  @apply bg-gradient-to-r from-[var(--L-purple)] to-[--D-purple];
+}
